@@ -18,7 +18,10 @@ let strBoolRes = Boolean(strString)
 // console.log(typeof strBoolRes);  // here comes the concept of truthy and falsy
 
 /* 
-In JavaScript, values can be categorized as either "truthy" or "falsy." Truthy values evaluate to true in a boolean context, while falsy values evaluate to false. Here are some common examples:
+In JavaScript, values can be categorized as either "truthy" or "falsy." 
+Truthy values evaluate to true in a boolean context, while falsy values evaluate to false.
+
+ Here are some common examples:
 
 Falsy Values...
 false
