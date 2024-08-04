@@ -1,3 +1,5 @@
+// topics covered: for loop , continue , break
+
 // basic counting print kar rhe 
 for (let i = 1; i <= 10; i++) {
     console.log(i)
