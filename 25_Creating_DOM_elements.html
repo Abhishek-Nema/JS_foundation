@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: black; color:white;">
+
+    <div class="parentCont">
+        <div class="childCont"></div>
+    </div>
+
+</body>
+
+<script>
+    // creating a new h1 element
+    let h1 = document.createElement("h1")
+
+    // adding some text to it
+    h1.innerHTML = "hey, it's h1"
+
+    // providing it ID
+    h1.id = "ID_h1"
+
+    // providing it class
+    h1.className = "h1_class"
+
+    console.log(h1);
+
+    // connecting this h1 with html document
+    document.body.appendChild(h1)
+
+    // creating new p element
+    let para = document.createElement("p")
+
+    // providing or setting its ID
+    para.setAttribute("id", "para_ID")
+
+    // providing or setting its class
+    para.setAttribute("class", "myParaClass")
+
+    // adding some text to it
+    let text = document.createTextNode("this is para from DOM")
+    para.appendChild(text)
+
+    console.log(para);
+
+    // connecting this para element with html document
+    document.body.appendChild(para)
+
+
+</script>
+
+</html>

@@ -1,0 +1,52 @@
+<!-- creating an HTML file -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice code</title>
+</head>
+
+<!-- adding some styles to save my eyes -->
+<body style="background-color: black; color: white;">
+
+    <!-- created one class: "parent" -->
+    <div class="parentClass"></div>
+
+</body>
+
+<script>
+
+    // created an array for text
+    let strArray = ["first line", "second line", "third line", "fourth line", "fifth line"]
+
+    // created an array for colours name
+    let colourArray = ["red", "blue", "green", "yellow", "orange"]
+
+    // function taking two parameters, text and colour from above arrays
+    function createANewDiv(strArray, colourArray) {
+
+        for (let i = 0; i < strArray.length; i++) {
+
+            // creating new div element for DOM 
+            let div = document.createElement("div")
+
+            // adding text to div element 
+            div.innerText = strArray[i]
+
+            // adding colours to div element
+            div.style.backgroundColor = colourArray[i]
+
+            // connecting our mannually created element to HTML document
+            let parentClass = document.querySelector(".parentClass").appendChild(div)
+        }
+    }
+
+    // calling the function so that above code will execute
+    createANewDiv(strArray, colourArray)
+
+
+</script>
+
+</html>
