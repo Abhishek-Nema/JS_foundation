@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifying DOM elements</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+
+    <ul class="fruitClass">
+        <li>Mango</li>
+     </ul>
+
+</body>
+<script>
+
+    // creating an element
+    function addItems(fruitName){
+        let li = document.createElement("li")
+        let addingText = document.createTextNode(fruitName)
+        li.appendChild(addingText)
+        document.querySelector(".fruitClass").appendChild(li)
+    }
+
+    addItems("Apple")
+    addItems("Tomato")
+    addItems("Papaya")
+    
+
+    // modifying an element
+    let thirdElement = document.querySelector("li:nth-child(3)")
+    let li = document.createElement('li')
+    let modifyText = document.createTextNode("Indian blackberry")
+    li.appendChild(modifyText)
+    thirdElement.replaceWith(li)
+    
+
+    // deleting an element
+    let lastChild = document.querySelector("li:last-child")
+    lastChild.remove()
+
+</script>
+</html>
